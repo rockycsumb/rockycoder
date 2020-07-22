@@ -8,7 +8,7 @@ const App = () => {
       <NavBar />
 	  <div className="App-spacing">
 		  hi
-	  </div>
+	  </div> 
 		  <div className="App-spacing">
 		  hi
 	  </div>
