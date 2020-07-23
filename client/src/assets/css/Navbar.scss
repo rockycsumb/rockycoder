@@ -1,20 +1,65 @@
 @import './MainColors.scss';
 
 .Navbar-bg {
-    background-color: $gray-dark;
+    // background-color: $gray-dark;
+    background: $menu-gradient;
 }
 
 .Navbar-logo {
+    margin: 0 5em;
+}
+
+.Navbar-menu-space {
+    width: 5em;
+}
+
+.Navbar-logo-some {
+    font-size: 3.5vw;
     color: $yellow-color;
+    font-weight: bold;
+}
+
+.Navbar-logo-coder {
+    font-size: 3.5vw;
+    color: $white-color;
+    font-weight: bold;
 }
 
 .Navbar-buttons {
-    width: 30em;
+    width: 5em;
+    font-size: 14px;
+}
+
+.Navbar-links {
+    display: none;
+}
+
+.Navbar-popup-menu {
+    display: inline;
+    z-index: 1100;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: green; 
+}
+
+.Navbar-popup-menu-off {
+    display: none;
+}
+
+.Navbar-hamburger-toggler {
+    width: 40px;
+    height: 40px;
+    background: blue; 
 }
 
 .Navbar-menu-links {
+    color: $yellow-color !important;
     cursor: pointer;
 }
+
 
 .headroom {
     will-change: transform;
@@ -28,3 +73,98 @@
 .headroom--unpinned {
     transform: rotateX(90deg);
 }
+
+.Navbar-to-top {
+    background: white;
+    position: fixed;
+    bottom: 16px;
+    right:32px;
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size:32px;
+    color:#1f1f1f;
+    text-decoration: none;
+    opacity:0;
+    pointer-events: none;
+    transition: all .4s;
+  }
+  
+  .Navbar-to-top.active {
+    bottom:32px;
+    pointer-events: auto;
+    opacity:1;
+  }
+
+  .Navbar-to-top-text {
+    font-size: .5em;
+  }
+
+  @media(max-width: 576px) { 
+    .Navbar-logo-some {
+        font-size: 2em;
+        color: $yellow-color;
+        font-weight: bold;
+    }
+    
+    .Navbar-logo-coder {
+        font-size: 2em;
+        color: $white-color;
+        font-weight: bold;
+    }
+ }
+
+  @media(min-width: 576px) { 
+    .Navbar-logo-some {
+        font-size: 3em;
+        color: $yellow-color;
+        font-weight: bold;
+    }
+    
+    .Navbar-logo-coder {
+        font-size: 3em;
+        color: $white-color;
+        font-weight: bold;
+    }
+ }
+  
+  @media(min-width: 768px) { 
+    .Navbar-logo-some {
+        font-size: 3em;
+        color: $yellow-color;
+        font-weight: bold;
+    }
+    
+    .Navbar-logo-coder {
+        font-size: 3em;
+        color: $white-color;
+        font-weight: bold;
+    }
+ }
+
+  @media(min-width: 992px) { 
+    .Navbar-logo-some {
+        font-size: 5vw;
+        color: $yellow-color;
+        font-weight: bold;
+    }
+    
+    .Navbar-logo-coder {
+        font-size: 5vw;
+        color: $white-color;
+        font-weight: bold;
+    }
+
+    .Navbar-links {
+        display: inline;
+        width: 5em;
+        font-size: 14px;
+    }
+    .Navbar-hamburger {
+        display: none;
+    }
+ }
