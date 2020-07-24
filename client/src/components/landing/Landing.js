@@ -1,8 +1,10 @@
 import React, {useEffect} from 'react';
 import NavBar from '../navbar/NavBar';
+import Header from './Header';
 import { Element, Link } from 'react-scroll';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowUp } from '@fortawesome/free-solid-svg-icons';
+import '../../assets/css/Landing.scss';
 
 const Landing = () =>{
     useEffect(()=>{
@@ -21,15 +23,20 @@ const Landing = () =>{
         <div>
             <Element name="navbar" className="element" >
                   <NavBar />
-             </Element>
-            <div className="App-spacing">
+            </Element>
+			<div className="Landing-header-div">
+                <Element name="header" className="element" >
+                    <Header />
+                </Element>
+            </div>
+            <div className="Landing-project-div">
                 <Element name="projects" className="element" >
                     <h1>Projects</h1>
                     <h1>Projects</h1>
                     <h1>Projects</h1>
                 </Element>
             </div>
-            <div className="App-spacing">
+            <div className="Landing-resume-div">
                 <Element name="resume" className="element" >
                     <h1>Resume</h1>
                     <h1>Resume</h1>
@@ -37,11 +44,18 @@ const Landing = () =>{
                 </Element>
             </div>
 
-            <div className="App-spacing">
+            <div className="Landing-contact-div">
                 <Element name="contact" className="element" >
                     <h1>Contact</h1>
                     <h1>Contact</h1>
                     <h1>Contact</h1>
+                </Element>
+            </div>
+			<div className="Landing-footer-div">
+                <Element name="footer" className="element" >
+                    <h1>Footer</h1>
+                    <h1>Footer</h1>
+                    <h1>Footer</h1>
                 </Element>
             </div>
             <Link activeClass="active" className="Navbar-to-top" to="navbar" spy={true} smooth={true} duration={500} >

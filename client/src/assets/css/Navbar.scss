@@ -34,32 +34,74 @@
     display: none;
 }
 
+.Navbar-hamburger-toggler {
+    width: 10px;
+    height: 10px;
+	color: $yellow-color;
+    font-size: 2em;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.Navbar-close-toggler-spin {
+	position: relative;
+	font-size: 2em;
+    width: 40px;
+    height: 40px;
+	color: $gray-dark;
+    display: flex;
+	align-items: center;
+	justify-content: center;
+	animation: spin-animation 1s 1;
+}
+
+@keyframes spin-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(359deg);
+  }
+}
+
 .Navbar-popup-menu {
-    display: inline;
-    z-index: 1100;
+    visibility: visible;
+    z-index: 1050;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: green; 
+	transform-origin: top right;
+	transform: scale(1);
+	transition-duration: .25s;
+    background: $yellow-color; 
 }
 
 .Navbar-popup-menu-off {
-    display: none;
+   
+	transform: scale(0);
+	transition: all .25s ease;
 }
 
-.Navbar-hamburger-toggler {
-    width: 40px;
-    height: 40px;
-    background: blue; 
+.Navbar-links-popup-menu {
+    height: 80vh;
 }
 
-.Navbar-menu-links {
-    color: $yellow-color !important;
+.Navbar-menu-links-popup {
+	font-size: 3em;
+	font-weight: bold;
+    color: $gray-dark !important;
     cursor: pointer;
 }
 
+.Navbar-menu-links {
+	
+    color: $yellow-color !important;
+	font-weight: bold;
+    cursor: pointer;
+}
 
 .headroom {
     will-change: transform;
@@ -164,7 +206,7 @@
         width: 5em;
         font-size: 14px;
     }
-    .Navbar-hamburger {
+    .Navbar-hamburger-toggler {
         display: none;
     }
  }

@@ -1,0 +1,37 @@
+@import './MainColors.scss';
+
+.Landing-header-div, .Landing-resume-div, .Landing-contact-div {
+	position: relative;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.Landing-header-div {
+	min-height: 600px;
+	background-image: url('../images/header-gif.gif');
+}
+
+.Landing-project-div {
+	min-height: 400px;
+	color: black;
+	background-color: white;
+	text-align: center;
+	
+}
+
+.Landing-resume-div {
+	min-height: 400px;
+	background-image: url('../images/resumepic.jpg');
+}
+
+.landing-contact-div {
+	min-height: 400px;
+	background: $yellow-color;
+}
+
+.Landing-footer-div {
+	min-height: 30px;
+	background: $gray-dark;
+}

@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react';
 import Headroom from 'headroom.js';
 import { Link } from 'react-scroll';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars } from '@fortawesome/free-solid-svg-icons'
+import { faBars , faTimes, faPlus} from '@fortawesome/free-solid-svg-icons'
 
 const NavBar = () =>{
 	const [toggle, setToggle] = useState(false);
@@ -20,14 +20,50 @@ const NavBar = () =>{
 	
 	return (
 		<div>
-		
 			<div className={toggle ? "Navbar-popup-menu" : "Navbar-popup-menu Navbar-popup-menu-off"} >
-				<div className="Navbar-hamburger-toggler border border-white" onClick={toggler} >
-					<FontAwesomeIcon icon={faBars} />
+				<div className="d-flex justify-content-end mr-3 mt-3">
+					<div className={toggle ? "Navbar-close-toggler-spin" : ""} onClick={toggler} >
+						<FontAwesomeIcon icon={faTimes} />
+					</div>
+				</div>
+				<div className="d-flex justify-content-center Navbar-links-popup-menu">
+					<div className="d-flex flex-column align-items-center justify-content-center">
+						<Link 
+							activeClass="active" 
+							className="projects Navbar-menu-links-popup" 
+							to="projects" 
+							spy={true} 
+							smooth={true} 
+							duration={1000} 
+							onClick={toggler}
+						>
+							Projects
+						</Link>
+						<Link 
+							activeClass="active" 
+							className="resume Navbar-menu-links-popup" 
+							to="resume" 
+							spy={true} 
+							smooth={true} 
+							duration={1000} 
+							onClick={toggler}
+						>
+							Resume
+						</Link>
+						<Link 
+							activeClass="active" 
+							className="contact Navbar-menu-links-popup" 
+							to="contact" 
+							spy={true} 
+							smooth={true} 
+							duration={1000} 
+							onClick={toggler}
+						>
+							Contact
+						</Link>
+					</div>
 				</div>
 			</div>	
-
-
 			<div className="Navbar-bg headroom fixed-top" id="navbar-main">
 				<div className="d-flex text-white justify-content-around align-items-center ">
 					<div className="Navbar-menu-space">
@@ -35,17 +71,16 @@ const NavBar = () =>{
 					</div>
 					<div className="Navbar-logo  d-flex align-items-center">
 						<div className="Navbar-logo-some" >
-							Some
+							Rocky
 						</div>
 						<div className="Navbar-logo-coder">
 							Coder
 						</div>
 					</div>
 					<div className="Navbar-buttons ">
-						<div className="Navbar-hamburger-toggler border border-white" onClick={toggler}>
-							<FontAwesomeIcon icon={faBars} />
+						<div className="Navbar-hamburger-toggler" onClick={toggler} >
+							<FontAwesomeIcon icon={faPlus} />
 						</div>
-								
 						<div className="Navbar-links">
 							<div className="d-flex flex-column justify-content-around">
 								<Link 
