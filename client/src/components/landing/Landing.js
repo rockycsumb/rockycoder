@@ -1,6 +1,7 @@
 import React, {useEffect} from 'react';
 import NavBar from '../navbar/NavBar';
 import Header from './Header';
+import Projects from './Projects';
 import { Element, Link } from 'react-scroll';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowUp } from '@fortawesome/free-solid-svg-icons';
@@ -31,9 +32,9 @@ const Landing = () =>{
             </div>
             <div className="Landing-project-div">
                 <Element name="projects" className="element" >
-                    <h1>Projects</h1>
-                    <h1>Projects</h1>
-                    <h1>Projects</h1>
+				
+						<Projects />
+					
                 </Element>
             </div>
             <div className="Landing-resume-div">

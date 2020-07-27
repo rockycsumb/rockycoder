@@ -1,7 +1,9 @@
 @import './MainColors.scss';
+@import './MainFonts.scss';
 
 .Header-main {
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	position: absolute;
@@ -12,14 +14,41 @@
 }
 
 .Header-title {
+	font-family: $Poppin;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 10px 2em;
+	background: $menu-gradient;
+	border-radius: 5px;
+	opacity: .85;
+}
+
+.Header-title-names {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	font-weight: 400;
-	font-size: 5em;
+}
+
+.Header-title-name {
+	font-size: 4em;
+	line-height: 1;
+	color: $yellow-color;
+}
+
+.Header-title-description {
+	line-height: 2;
+	font-size: 1.7em;
 	color: white;
-	margin: 0;
-	padding: 10px 2em;
-	background: $gray-dark;
-	border-radius: 10px;
+}
+
+@media(min-width: 992px){
+	.Header-title-names {
+		flex-direction: row;
+	}
+	
+	.Header-title-name {
+		margin: 0 10px
+	}
 }

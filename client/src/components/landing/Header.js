@@ -5,17 +5,21 @@ const Header = () =>{
 	
 	return(
 		<div className="Header-main">
-				<div className="Header-title">
-					<div>
-						Rocky
+			<div className="Header-title">
+				<div className="Header-title-names">
+					<div className="Header-title-name">
+						Some
 					</div>
-					<div>
-						Moreno
-					</div>
-					<div>
-						<h5>Frontend Engineer</h5>
+					<div className="Header-title-name">
+						Lasting
 					</div>
 				</div>
+				
+				<div className="Header-title-description">
+					FRONTEND ENGINEER
+				</div>
+				
+			</div>
 		</div>
 	)
 }

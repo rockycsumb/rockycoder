@@ -71,18 +71,18 @@ const NavBar = () =>{
 					</div>
 					<div className="Navbar-logo  d-flex align-items-center">
 						<div className="Navbar-logo-some" >
-							Rocky
+							Some
 						</div>
 						<div className="Navbar-logo-coder">
 							Coder
 						</div>
 					</div>
-					<div className="Navbar-buttons ">
+					<div className="Navbar-buttons">
 						<div className="Navbar-hamburger-toggler" onClick={toggler} >
 							<FontAwesomeIcon icon={faPlus} />
 						</div>
 						<div className="Navbar-links">
-							<div className="d-flex flex-column justify-content-around">
+							<div className="d-flex flex-row justify-content-around">
 								<Link 
 									activeClass="active" 
 									className="projects Navbar-menu-links" 

@@ -1,16 +1,18 @@
 @import './MainColors.scss';
-
+@import './MainFonts.scss';
 .Navbar-bg {
     // background-color: $gray-dark;
     background: $menu-gradient;
 }
 
 .Navbar-logo {
+	font-family: $Recursive-main;
     margin: 0 5em;
+	margin-bottom: 5px;
 }
 
 .Navbar-menu-space {
-    width: 5em;
+    width: 10em;
 }
 
 .Navbar-logo-some {
@@ -26,8 +28,10 @@
 }
 
 .Navbar-buttons {
-    width: 5em;
+	font-family: $Recursive-main;
+    width: 10em;
     font-size: 14px;
+	margin-right: 5px;
 }
 
 .Navbar-links {
@@ -90,6 +94,7 @@
 }
 
 .Navbar-menu-links-popup {
+	font-family: $Recursive-main;
 	font-size: 3em;
 	font-weight: bold;
     color: $gray-dark !important;
@@ -99,6 +104,7 @@
 .Navbar-menu-links {
 	
     color: $yellow-color !important;
+	margin: 0 1em;
 	font-weight: bold;
     cursor: pointer;
 }
@@ -205,6 +211,7 @@
         display: inline;
         width: 5em;
         font-size: 14px;
+		
     }
     .Navbar-hamburger-toggler {
         display: none;
