@@ -2,6 +2,8 @@ import React, {useEffect} from 'react';
 import NavBar from '../navbar/NavBar';
 import Header from './Header';
 import Projects from './Projects';
+import Resume from './Resume';
+import Contact from './Contact';
 import { Element, Link } from 'react-scroll';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowUp } from '@fortawesome/free-solid-svg-icons';
@@ -39,17 +41,13 @@ const Landing = () =>{
             </div>
             <div className="Landing-resume-div">
                 <Element name="resume" className="element" >
-                    <h1>Resume</h1>
-                    <h1>Resume</h1>
-                    <h1>Resume</h1>
+                    <Resume />
                 </Element>
             </div>
 
             <div className="Landing-contact-div">
                 <Element name="contact" className="element" >
-                    <h1>Contact</h1>
-                    <h1>Contact</h1>
-                    <h1>Contact</h1>
+                    <Contact />
                 </Element>
             </div>
 			<div className="Landing-footer-div">

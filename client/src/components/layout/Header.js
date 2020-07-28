@@ -11,7 +11,7 @@ const Header = () =>{
 						Some
 					</div>
 					<div className="Header-title-name">
-						Lasting
+						Coding
 					</div>
 				</div>
 				

@@ -1,4 +1,5 @@
 import React, {Fragment} from 'react';
+import {Link} from 'react-router-dom';
 import '../../assets/css/Projects.scss';
 
 const Projects = () =>{
@@ -35,13 +36,13 @@ const Projects = () =>{
 								<h5>CurlyAdmin.com</h5>
 							</div>
 							<div>
-								<a class="btn btn-warning" 
-									href="https://www.curlyadmin.com/" 
+								<Link class="btn btn-warning" 
+									to={{ pathname: "https://www.curlyadmin.com" }} 
 									role="button" 
 									target="_blank"
 								>
 									Demo
-								</a>
+								</Link>
 							</div>
 						</div>
 					</div>
@@ -57,13 +58,13 @@ const Projects = () =>{
 								<h5>CurlyAdmin.com</h5>
 							</div>
 							<div>
-								<a class="btn btn-warning" 
-									href="https://www.curlyadmin.com/" 
+								<Link class="btn btn-warning" 
+									to={{ pathname: "https://www.curlyadmin.com" }}  
 									role="button" 
 									target="_blank"
 								>
 									Demo
-								</a>
+								</Link>
 							</div>
 						</div>
 					</div>
@@ -110,13 +111,13 @@ const Projects = () =>{
 								<h5>CurlyAdmin.com</h5>
 							</div>
 							<div>
-								<a class="btn btn-warning" 
-									href="https://www.curlyadmin.com/" 
+								<Link class="btn btn-warning" 
+									to={{ pathname: "https://www.curlyadmin.com" }} 
 									role="button" 
 									target="_blank"
 								>
 									Demo
-								</a>
+								</Link>
 							</div>
 						</div>
 					</div>
@@ -132,13 +133,13 @@ const Projects = () =>{
 								<h5>CurlyAdmin.com</h5>
 							</div>
 							<div>
-								<a class="btn btn-warning" 
-									href="https://www.curlyadmin.com/" 
+								<Link class="btn btn-warning" 
+									to={{ pathname: "https://www.curlyadmin.com" }} 
 									role="button" 
 									target="_blank"
 								>
 									Demo
-								</a>
+								</Link>
 							</div>
 						</div>
 					</div>

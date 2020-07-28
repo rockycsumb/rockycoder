@@ -12,7 +12,7 @@
 	font-family: $Recursive-main;
 	font-size: 2em;
 	font-weight: bold;
-	font-color: $gray-dark;
+	color: $gray-dark;
 }
 
 .Projects-title-item2 hr {
@@ -145,10 +145,12 @@
 }
 
 .Projects-tech-title {
+	font-family: $Poppin;
 	color: $gray-dark;
 }
 
 .Projects-tech-info {
+	font-family: $Poppin;
 	color: $gray-light;
 }
 
