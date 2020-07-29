@@ -4,7 +4,8 @@ import '../../assets/css/Contact.scss';
 import emailjs from 'emailjs-com';
 
 const Contact = () =>{
-	
+	const [sendingMessage, setSendingMessage] = useState(false);
+	const [messageSent, setMessageSent] = useState(false);
 	const [formData, setFormData] = useState({
 		name: "",
 		email: "",
@@ -23,6 +24,7 @@ const Contact = () =>{
 	const onSubmit = e => {
 		e.preventDefault();
 		
+		setSendingMessage(true);
 		
 		let templateParams = {
 			name: name,
@@ -42,8 +44,16 @@ const Contact = () =>{
 			message: ""
 		});
 		
+		setTimeout(()=>{
+			setTimeout(()=>{
+				// console.log("send a message****")
+				setSendingMessage(false);
+				setMessageSent(false);
+			}, 2000);
+			setMessageSent(true);
+			// console.log("message sent*****")
+		}, 2000);
 	}
-	
 	
 	return(
 		<div className="Contact pb-5">
@@ -54,9 +64,31 @@ const Contact = () =>{
 				<div>
 					<hr className="Contact-title-hr" />
 				</div>
+				<div>
+					<p>Please contact me for any questions</p>
+				</div>
 			</div>
 			
-			<div className="Contact-form">
+			{sendingMessage && !messageSent ? (
+				<div className="Contact-message-container">
+					<div class="spinner-border spinner-size text-secondary" role="status">
+					  <span class="sr-only">Loading...</span>
+					</div>
+				</div>
+				
+			) : (
+				
+				messageSent ? (
+					<div className="Contact-message-container">
+						<div>
+							<h3>Message Sent!</h3>
+							
+						</div>
+					</div>
+					
+				) : (
+				
+				<div className="Contact-form">
 				<form onSubmit={e => onSubmit(e)}>
 					<div className="form-group text-center  Contact-form-row">
 						<div className="Contact-form-row-item">
@@ -104,9 +136,18 @@ const Contact = () =>{
 							></textarea>
 						</div>
 					</div>
-					<button type="submit">Submit</button>
+					<div className="Contact-form-button-container">
+						<div className="Contact-form-submit">
+							<button 
+								type="submit" 
+								className="btn btn-dark btn-lg btn-block"
+								>Submit
+							</button>
+						</div>
+					</div>
 				</form>
 			</div>
+			))}
 		</div>
 	)
 }

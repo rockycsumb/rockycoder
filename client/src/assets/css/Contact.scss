@@ -1,6 +1,10 @@
 @import './MainColors.scss';
 @import './MainFonts.scss';
 
+
+.Contact {
+	
+}
 .Contact-title-header {
 	display: flex;
 	flex-direction: column;
@@ -17,9 +21,23 @@
 
 .Contact-title-hr {
 	margin-top: 0;
+	margin-bottom: 0;
 	border-top: solid $yellow-color 4px;
 	height: 2px;
     box-shadow: inset 0 12px 12px -12px $gray-dark;
+}
+
+
+.Contact-message-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 300px;
+}
+
+.spinner-size {
+	width: 5em; 
+	height: 5em;
 }
 
 .Contact-form {
@@ -29,8 +47,9 @@
 .Contact-form-row {
 	display: flex;
 	flex-direction: column;
-	
 }
+
+
 
 
 @media(min-width: 768px){
@@ -51,6 +70,15 @@
 	.Contact-textarea-container{
 		display: flex;
 		justify-content: center;
+	}
+	
+	.Contact-form-button-container{
+		display: flex;
+		justify-content: center;
+	}
+	
+	.Contact-form-submit{
+		width: 600px;
 	}
 	
 	
