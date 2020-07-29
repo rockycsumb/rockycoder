@@ -4,6 +4,7 @@ import Header from './Header';
 import Projects from './Projects';
 import Resume from './Resume';
 import Contact from './Contact';
+import Footer from './Footer';
 import { Element, Link } from 'react-scroll';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowUp } from '@fortawesome/free-solid-svg-icons';
@@ -11,15 +12,15 @@ import '../../assets/css/Landing.scss';
 
 const Landing = () =>{
     useEffect(()=>{
-        const toTop = document.querySelector(".Navbar-to-top");
+        // const toTop = document.querySelector(".Navbar-to-top");
     
-        window.addEventListener("scroll", () => {
-        if (window.pageYOffset > 100) {
-            toTop.classList.add("active");
-        } else {
-            toTop.classList.remove("active");
-        }
-        })
+        // window.addEventListener("scroll", () => {
+        // if (window.pageYOffset > 100) {
+        //     toTop.classList.add("active");
+        // } else {
+        //     toTop.classList.remove("active");
+        // }
+        // })
     })
 
     return (
@@ -52,11 +53,10 @@ const Landing = () =>{
             </div>
 			<div className="Landing-footer-div">
                 <Element name="footer" className="element" >
-                    <h1>Footer</h1>
-                    <h1>Footer</h1>
-                    <h1>Footer</h1>
+                    <Footer />
                 </Element>
             </div>
+			{/*
             <Link activeClass="active" className="Navbar-to-top" to="navbar" spy={true} smooth={true} duration={500} >
                 <div>
                     <FontAwesomeIcon icon={faArrowUp} />
@@ -65,6 +65,7 @@ const Landing = () =>{
                     To Top
                 </div>
             </Link>
+			*/}
         </div>
       );
 }

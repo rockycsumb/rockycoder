@@ -80,22 +80,32 @@
 	
 	.Resume-content ul {
 		margin: 0 2em;
-		font-size: 3vw;
+		font-size: 2vw;
 	}
 	
 	.Resume-content  {
 		margin: 0 2em;
-		font-size: 3vw;
+		font-size: 2vw;
 	}
 	
 	.Resume-content hr {
 		display: none;
-		
 	}
 	
 	.Resume-content-column2 ul{
 		border-left: 3px $yellow-color solid;
-		
+	}
+}
+
+@media(min-width: 1200px){
+	.Resume-content ul {
+		margin: 0 2em;
+		font-size: 1.25em;
 	}
 	
+	.Resume-content  {
+		margin: 0 2em;
+		font-size: 1.25em;
+	}
 }
+

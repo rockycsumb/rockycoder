@@ -20,18 +20,16 @@ const Resume = () =>{
 				<div className="Resume-content">
 					<div className="Resume-content-column1">
 						<ul>
-							<li>MERN Stack</li>
+							<li>MERN FullStack</li>
 							<li>JS</li>
 							<li>C++</li>
 							<li>PHP</li>
-							<li>SQL</li>
 						</ul>
 					</div>
 					<hr />
 					
 					<div className="Resume-content-column2">
 						<ul>
-							<li>MERN Stack</li>
 							<li>B.S. Computer Science</li>
 							<li>A.A. Natural Science</li>
 							<li>Location: San Jose</li>
