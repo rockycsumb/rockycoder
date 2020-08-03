@@ -16,6 +16,11 @@ const Resume = () =>{
 				</div>
 			</div>
 			
+			
+			
+			
+			
+			{/*
 			<div className="Resume-content-container">
 				<div className="Resume-content">
 					<div className="Resume-content-column1">
@@ -47,6 +52,7 @@ const Resume = () =>{
 					</div>
 				</div>
 			</div>
+			*/}
 			
 		</div>
 	)

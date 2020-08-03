@@ -35,9 +35,7 @@ const Landing = () =>{
             </div>
             <div className="Landing-project-div">
                 <Element name="projects" className="element" >
-				
 						<Projects />
-					
                 </Element>
             </div>
             <div className="Landing-resume-div">

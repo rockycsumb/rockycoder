@@ -1,6 +1,6 @@
 @import './MainColors.scss';
 
-.Landing-header-div, .Landing-resume-div, .Landing-contact-div {
+.Landing-header-div, .Landing-resume-div, .Landing-contact-div, .Landing-footer-div {
 	position: relative;
 	background-attachment: fixed;
 	background-position: center;
@@ -8,9 +8,10 @@
 	background-size: cover;
 }
 
+
 .Landing-header-div {
 	min-height: 600px;
-	background-image: url('../images/giphyopt.gif');
+	background-image: url('../images/headerbg.gif');
 }
 
 .Landing-project-div {
@@ -31,6 +32,6 @@
 }
 
 .Landing-footer-div {
-	min-height: 200px;
-	background: $gray-dark;
+	min-height: 300px;
+	background-image: url('../images/footerbg.png');
 }
