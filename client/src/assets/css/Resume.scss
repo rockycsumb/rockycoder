@@ -22,90 +22,45 @@
     box-shadow: inset 0 12px 12px -12px $gray-dark;
 }
 
-.Resume-content-container {
+.Resume-container {
 	display: flex;
 	justify-content: center;
-	padding-bottom: 2em;
+	flex-direction: column;
+	// border: 2px solid white;
 }
 
-.Resume-content {
-	font-family: $Poppin;
-	display: flex;
-	flex-direction:column;
-	align-items: start;
-	margin: 1em;
-	color: $yellow-color;
-	font-size: 1.25em;
-	font-weight: 600;
-	background-color: rgba(0, 0, 0, 0.7);
-	border-radius: 10px;
+.Resume-card {
+	background: white;
+	padding: .25em;
+	// border: 1px solid white;
+	margin: .5em;
+	border-radius: 5px;
+	width: 150px;
+	height: 150px;
+	font-size: 1.75em;
 }
 
-.Resume-content-column1 ul {
-	// margin: 0 10px;
+.Resume-badge-icon {
+	font-size: 2em;
 }
 
-.Resume-content-column2 ul {
-	// border-top: 2px yellow solid;
-	margin-right: 1em;
+.Resume-card:hover {
+	transform: translateY(-10px);
+	transition: all 0.15s ease;
 }
 
-.Resume-content hr {
-	width: 90%;
-	border-bottom: 3px $yellow-color solid;
-}
 
-.Resume-content ul {
-	list-style-type: none;
-}
-
-.Resume-content li {
-	margin: .5em 0;	
-}
-
-.Resume-content a {
-		font-size: .75em;
-		font-weight: bold;
-	}
 
 @media(min-width: 768px) {
-	.Resume-content-container {
+	.Resume-container {
 		display: flex;
 		justify-content: center;
-	}
-
-	.Resume-content {
-		flex-direction:row;
-	}
-	
-	.Resume-content ul {
-		margin: 0 2em;
-		font-size: 2vw;
-	}
-	
-	.Resume-content  {
-		margin: 0 2em;
-		font-size: 2vw;
-	}
-	
-	.Resume-content hr {
-		display: none;
-	}
-	
-	.Resume-content-column2 ul{
-		border-left: 3px $yellow-color solid;
+		flex-direction: row;
+		// border: 2px solid white;
 	}
 }
 
 @media(min-width: 1200px){
-	.Resume-content ul {
-		margin: 0 2em;
-		font-size: 1.25em;
-	}
 	
-	.Resume-content  {
-		margin: 0 2em;
-		font-size: 1.25em;
-	}
 }
 
