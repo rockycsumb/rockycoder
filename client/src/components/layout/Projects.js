@@ -37,7 +37,7 @@ const Projects = () =>{
 							</div>
 							<div>
 								<Link class="btn btn-warning" 
-									to={{ pathname: "https://www.curlyadmin.com" }} 
+									to={{ pathname: "https://curlyadmin-dev.herokuapp.com/demo/curlyadmin" }} 
 									role="button" 
 									target="_blank"
 								>
@@ -59,7 +59,7 @@ const Projects = () =>{
 							</div>
 							<div>
 								<Link class="btn btn-warning" 
-									to={{ pathname: "https://www.curlyadmin.com" }}  
+									to={{ pathname: "https://curlyadmin-dev.herokuapp.com/demo/curlyadmin/login" }}  
 									role="button" 
 									target="_blank"
 								>
