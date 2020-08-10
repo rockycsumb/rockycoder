@@ -63,7 +63,19 @@ const Footer = () =>{
 			</div>
 			
 			<div className="Footer-container Footer-signature">
-				<p><span>Site by </span> Rocky Moreno</p>
+				<p><span>Site by </span> 
+					
+						<Link 
+							className="Footer-name-link"
+							activeClass="Footer-name-link"
+							to="navbar" 
+							spy={true} 
+							smooth={true} 
+							duration={1000}
+						>
+							Rocky Moreno
+						</Link>
+				</p>
 			</div>
 			
 		</div>

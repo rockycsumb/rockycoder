@@ -1,5 +1,5 @@
 import React, {Fragment} from 'react';
-import {Link} from 'react-router-dom';
+import {Link, NavLink} from 'react-router-dom';
 import '../../assets/css/Projects.scss';
 
 const Projects = () =>{
@@ -17,7 +17,13 @@ const Projects = () =>{
 			<Fragment>
 			<div className="Projects-title-description">
 				<div className="Projects-container-item-name">
-					CurlyAdmin.com
+					<NavLink 
+						className="Projects-item-name-link"
+						to={{ pathname: "https://curlyadmin-dev.herokuapp.com/demo/curlyadmin" }} 
+						target="_blank"
+								>
+						CurlyAdmin.com
+					</NavLink>
 				</div>
 				<div className="Projects-container-item-description">
 					A virtual admin system

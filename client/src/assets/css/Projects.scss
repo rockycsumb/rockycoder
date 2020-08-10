@@ -38,6 +38,16 @@
 	align-self: center;
 }
 
+.Projects-item-name-link {
+	color: $gray-dark;
+	text-decoration: none;
+}
+
+.Projects-item-name-link:hover {
+	color: $gray-dark;
+	text-decoration: none;
+}
+
 .Projects-container-item-description {
 	font-size: 1em;
 	font-family: $Poppin;
@@ -202,5 +212,7 @@
 	  border: 1px solid #f1f1f1;
 	  perspective: 1000px; /* Remove this if you don't want the 3D effect */
 	}
+	
+	
 
 }
