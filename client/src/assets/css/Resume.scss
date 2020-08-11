@@ -30,7 +30,8 @@
 }
 
 .Resume-card {
-	background: white;
+	background-color: $resume-card-bg;
+	background-image: $resume-card-image;
 	padding: .25em;
 	// border: 1px solid white;
 	margin: .5em;
