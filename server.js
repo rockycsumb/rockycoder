@@ -1,6 +1,10 @@
+var sslRedirect = require('heroku-ssl-redirect');
 const express = require('express');
 const path = require('path');
 const app = express();
+
+// enable ssl redirect
+app.use(sslRedirect());
 
 //before deploy to heroku notes
 // commented out app.get (below), and added //Serve static assets, also added const path = require('path)
