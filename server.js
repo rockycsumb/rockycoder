@@ -1,11 +1,11 @@
-// var sslRedirect = require('heroku-ssl-redirect');
+var sslRedirect = require('heroku-ssl-redirect');
 const express = require('express');
 const path = require('path');
 
 const app = express();
 
 // enable ssl redirect
-// app.use(sslRedirect());
+app.use(sslRedirect());
 
 //before deploy to heroku notes
 // commented out app.get (below), and added //Serve static assets, also added const path = require('path)
@@ -20,12 +20,6 @@ if(process.env.NODE_ENV === 'production'){
 	app.use(express.static('client/build'));
 	app.get('*', (req, res)=>{
 		res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'))
-	})
-	app.use((req, res, next) => {
-		if (req.header('x-forwarded-proto') !== 'https')
-			res.redirect(`https://${req.header('host')}${req.url}`)
-		else
-			next()
 	})
 }
 
