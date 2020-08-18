@@ -86,7 +86,7 @@ const Projects = () =>{
 					</p>
 					<p>
 						<span className="font-weight-bold Projects-tech-title">API's: </span>
-						<span className="font-weight-light Projects-tech-info">Sendgrid, Emailjs, Recaptcha, Postman
+						<span className="font-weight-light Projects-tech-info">Sendgrid, Emailjs, Recaptcha, Stripe
 						</span>
 					</p>
 				</div>

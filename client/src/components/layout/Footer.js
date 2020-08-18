@@ -13,7 +13,7 @@ const Footer = () =>{
 			<div className="Footer-container">
 				<div className="Footer-logo-rockycoder  d-flex align-items-center mt-5">
 					<div className="Footer-logo-some" >
-						Some
+						Rocky
 					</div>
 					<div className="Footer-logo-coder">
 						Coder

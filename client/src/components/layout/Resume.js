@@ -123,8 +123,9 @@ const Resume = () =>{
 					</div>
 					<div className="Resume-card text-center shadow-sm">
 						Resume
+						
 						<Link
-									className="btn btn-warning "
+									className="btn btn-warning btn-sm"
 									to={myResume}
 									target="_blank"	
 									download
