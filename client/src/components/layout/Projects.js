@@ -19,7 +19,7 @@ const Projects = () =>{
 				<div className="Projects-container-item-name">
 					<NavLink 
 						className="Projects-item-name-link"
-						to={{ pathname: "https://curlyadmin-dev.herokuapp.com/demo/curlyadmin" }} 
+						to={{ pathname: "https://www.curlyadmin.com/demo/curlyadmin" }} 
 						target="_blank"
 								>
 						CurlyAdmin.com
@@ -43,7 +43,7 @@ const Projects = () =>{
 							</div>
 							<div>
 								<Link class="btn btn-warning" 
-									to={{ pathname: "https://curlyadmin-dev.herokuapp.com/demo/curlyadmin" }} 
+									to={{ pathname: "https://www.curlyadmin.com/demo/curlyadmin" }} 
 									role="button" 
 									target="_blank"
 								>
@@ -65,7 +65,7 @@ const Projects = () =>{
 							</div>
 							<div>
 								<Link class="btn btn-warning" 
-									to={{ pathname: "https://curlyadmin-dev.herokuapp.com/demo/curlyadmin/login" }}  
+									to={{ pathname: "https://www.curlyadmin.com/demo/curlyadmin/login" }}  
 									role="button" 
 									target="_blank"
 								>
@@ -98,7 +98,13 @@ const Projects = () =>{
 			<Fragment>
 			<div className="Projects-title-description">
 				<div className="Projects-container-item-name">
+					<NavLink 
+						className="Projects-item-name-link"
+						to={{ pathname: "https://www.rockycoder.com" }} 
+						target="_blank"
+								>
 					RockyCoder.com
+					</NavLink>
 				</div>
 				<div className="Projects-container-item-description">
 					My portfolio website
@@ -118,7 +124,7 @@ const Projects = () =>{
 							</div>
 							<div>
 								<Link class="btn btn-warning" 
-									to={{ pathname: "https://rockycoder.herokuapp.com/" }} 
+									to={{ pathname: "https://www.rockycoder.com/" }} 
 									role="button" 
 									target="_blank"
 								>
@@ -140,7 +146,7 @@ const Projects = () =>{
 							</div>
 							<div>
 								<Link class="btn btn-warning" 
-									to={{ pathname: "https://rockycoder.herokuapp.com/" }} 
+									to={{ pathname: "https://www.rockycoder.com/" }} 
 									role="button" 
 									target="_blank"
 								>
