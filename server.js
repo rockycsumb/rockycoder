@@ -13,7 +13,8 @@ app.use(sslRedirect());
 // added this to package.json in scripts> underneath dev, "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
 
 app.use(express.json({extended: false}));
-app.use(cors({origin: 'https://mernstack-shrnureact.run-us-west2.goorm.io'}))
+app.use(cors({origin: 'https://www.rockycoder.com'}))
+// app.use(cors({origin: 'https://mernstack-shrnureact.run-us-west2.goorm.io'}))
 // app.get('/', (req, res)=>res.send('API Running'));
 
 app.post('/plaidApply', async (req, res) => {
