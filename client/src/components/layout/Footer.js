@@ -9,7 +9,7 @@ import '../../assets/css/Footer.scss';
 const Footer = () =>{
 		
 	return(
-		<div className="Footer">
+		<div className="FooterPA">
 			<div className="Footer-container">
 				<div className="Footer-logo-rockycoder  d-flex align-items-center mt-5">
 					<div className="Footer-logo-some" >
