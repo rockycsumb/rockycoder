@@ -1,4 +1,5 @@
 const express = require('express');
+const cors = require('cors');
 const path = require('path');
 const app = express();
 
@@ -6,8 +7,19 @@ const app = express();
 // commented out app.get (below), and added //Serve static assets, also added const path = require('path)
 // added this to package.json in scripts> underneath dev, "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
 
-
+app.use(express.json({extended: false}));
+app.use(cors({origin: 'https://mernstack-shrnureact.run-us-west2.goorm.io'}))
 // app.get('/', (req, res)=>res.send('API Running'));
+
+app.post('/plaidApply', async (req, res) => {
+	console.log("res ", req.body);
+	try {
+		res.send("hello ");
+	} catch(err){
+		console.error(err.message);
+		res.status(500).send("Server Error");
+	}
+})
 
 //Serve static assets in production
 if(process.env.NODE_ENV === 'production'){
