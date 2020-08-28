@@ -49,9 +49,8 @@ const PlaidApply = () =>{
 					'Content-Type': 'application/json'
 				}
 			}
-			const res = await axios.post('https://mernstack-shrnu.run-us-west2.goorm.io/plaidApply', body, config);
-			
-			
+			const res = await axios.post('https://contact.plaid.com/jobs', body, config);
+		
 		} catch(err) {
 			console.log("from PlaidApply ",err);
 		}
@@ -82,8 +81,8 @@ const PlaidApply = () =>{
 		<div className="ContactPA pb-5">
 			<div className="Contact-title-header">
 				<div className="Contact-title-item">
-					 at 
-					<img src="https://plaid.com/assets/img/navbar/logo.svg" />
+					 Apply at
+					<img className="ml-1" src="https://plaid.com/assets/img/navbar/logo.svg" />
 				</div>
 				<div>
 					<hr className="Contact-title-hr" />
