@@ -106,7 +106,7 @@ const Projects = () =>{
 					</NavLink>
 				</div>
 				<div className="Projects-container-item-description">
-					CoderChat - whatsApp replica for coders
+					CoderChat - WhatsApp replica for coders
 				</div>
 			</div>
 			
