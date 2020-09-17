@@ -92,6 +92,88 @@ const Projects = () =>{
 				</div>
 			</div>
 			</Fragment>
+			
+			{/*** NEW  PROJECT ***/}
+			<hr className="Projects-divider" />
+			
+			<Fragment>
+			<div className="Projects-title-description">
+				<div className="Projects-container-item-name">
+					<NavLink 
+						className="Projects-item-name-link"
+						to={{ pathname: "https://covid-tracker-4a671.web.app/" }} 
+						target="_blank"
+								>
+					CovidTracker
+					</NavLink>
+				</div>
+				<div className="Projects-container-item-description">
+					CovidTracker - Web app for covid tracking
+				</div>
+			</div>
+			
+			<div className="Projects-thumbnails">
+				<div className="flip-card">
+					<div className="flip-card-inner">
+						<div className="flip-card-front">
+								<img className="Projects-image" 
+									src={require("../../assets/images/covidthumb1.png")} />
+						</div>
+						<div className="d-flex flex-column justify-content-center flip-card-back">
+							<div>
+								<h5>CovidTracker</h5>
+							</div>
+							<div>
+								<Link class="btn btn-warning" 
+									to={{ pathname: "https://covid-tracker-4a671.web.app/" }} 
+									role="button" 
+									target="_blank"
+								>
+									Demo
+								</Link>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div className="flip-card">
+					<div className="flip-card-inner">
+						<div className="flip-card-front">
+								<img className="Projects-image" 
+									src={require("../../assets/images/covidthumb2.png")} />
+						</div>
+						<div className="d-flex flex-column justify-content-center flip-card-back">
+							<div>
+								<h5>CovidTracker</h5>
+							</div>
+							<div>
+								<Link class="btn btn-warning" 
+									to={{ pathname: "https://covid-tracker-4a671.web.app/" }} 
+									role="button" 
+									target="_blank"
+								>
+									Demo
+								</Link>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div className="Projects-tech">
+				<div className="text-left">
+					<p className="mb-0">
+						<span className="font-weight-bold Projects-tech-title">Technology Used: </span>
+						<span className="font-weight-light Projects-tech-info">React, Node.js, HTML, CSS, JavaScript, Firebase, leaflet Map, chartjs
+						</span>
+					</p>
+					<p>
+						<span className="font-weight-bold Projects-tech-title">API's: disease.sh</span>
+						<span className="font-weight-light Projects-tech-info">
+						</span>
+					</p>
+				</div>
+			</div>
+			</Fragment>
 			<hr className="Projects-divider" />
 			
 			<Fragment>
