@@ -1,9 +1,10 @@
 import React, {Fragment} from 'react';
 import {Link, NavLink} from 'react-router-dom';
+import ProjectInfo from './ProjectInfo';
+import {projectinfo} from '../../assets/projectinfo.js';
 import '../../assets/css/Projects.scss';
 
 const Projects = () =>{
-	
 	return(
 		<div className="d-flex flex-column">
 			<div className="Projects-title">
@@ -14,6 +15,7 @@ const Projects = () =>{
 					<hr />
 				</div>
 			</div>
+<<<<<<< HEAD
 			<Fragment>
 			<div className="Projects-title-description">
 				<div className="Projects-container-item-name">
@@ -319,22 +321,38 @@ const Projects = () =>{
 					</div>
 				</div>
 			</div>
+=======
+>>>>>>> rm_project_component
 			
-			<div className="Projects-tech">
-				<div className="text-left">
-					<p className="mb-0">
-						<span className="font-weight-bold Projects-tech-title">Technology Used: </span>
-						<span className="font-weight-light Projects-tech-info">React, Node.js, HTML, CSS, JavaScript 
-						</span>
-					</p>
-					<p>
-						<span className="font-weight-bold Projects-tech-title">API's: </span>
-						<span className="font-weight-light Projects-tech-info">Emailjs
-						</span>
-					</p>
-				</div>
-			</div>
-			</Fragment>
+			{/* begin project info */}
+			{projectinfo.map((project, index) =>(
+				<Fragment>
+					<ProjectInfo 
+						projectLiveLink={project.projectLiveLink}
+						projectTitle={project.projectTitle}
+						projectDescription={project.projectDescription}
+						thumb1={project.thumb1}
+						thumb2={project.thumb2}
+						projectBackCardTitle={project.projectBackCardTitle}
+						demoUrl1={project.demoUrl1}
+						demoUrl2={project.demoUrl2}
+						techUsed={project.techUsed}
+						apiUsed={project.apiUsed}
+
+					/>
+					
+					{console.log("from map ", index)}
+					
+				
+					{index !== projectinfo.length - 1 ? (
+						<hr className="Projects-divider" />
+					): (
+					 ""
+					)}
+	
+				</Fragment>
+			))}
+					
 		</div>
 	)
 }
