@@ -167,8 +167,8 @@ const Projects = () =>{
 						</span>
 					</p>
 					<p>
-						<span className="font-weight-bold Projects-tech-title">API's: disease.sh</span>
-						<span className="font-weight-light Projects-tech-info">
+						<span className="font-weight-bold Projects-tech-title">API's: </span>
+						<span className="font-weight-light Projects-tech-info">disease.sh
 						</span>
 					</p>
 				</div>
