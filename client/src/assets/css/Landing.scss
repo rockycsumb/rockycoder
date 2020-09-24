@@ -6,8 +6,8 @@
 	background-position: center;
 	// background-repeat: no-repeat;
 	// background-size: cover;
+	min-width: 300px;
 }
-
 
 .Landing-header-div {
 	min-height: 600px;
@@ -23,7 +23,8 @@
 
 .Landing-resume-div {
 	min-height: 400px;
-	background-image: url('../images/guitarpic.jpg');
+	// background-image: url('../images/guitarpic.jpg');
+	background-image: url('../images/footerbg.png');
 	
 }
 
