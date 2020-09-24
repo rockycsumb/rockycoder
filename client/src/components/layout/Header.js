@@ -23,7 +23,7 @@ const Header = () =>{
 				</div>
 			</div>
 			<div className="Header-badges">
-				<div className="d-flex justify-content-center">
+				<div className="d-flex justify-content-center badge-row">
 					<div className="Header-badges-items 
 								text-center
 								shadow"
