@@ -13,7 +13,7 @@ const ProjectInfo = ({
 	techUsed,
 	apiUsed
 }) =>{
-	
+
 	return (
 		<Fragment>
 			<div className="Projects-title-description">
