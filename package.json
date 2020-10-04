@@ -21,7 +21,6 @@
   },
   "homepage": "https://github.com/rockycsumb/rockycoder#readme",
   "dependencies": {
-    "axios": "^0.20.0",
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "heroku-ssl-redirect": "0.0.4",

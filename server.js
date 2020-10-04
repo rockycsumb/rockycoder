@@ -17,15 +17,15 @@ app.use(cors({origin: 'https://www.rockycoder.com'}))
 // app.use(cors({origin: 'https://mernstack-shrnureact.run-us-west2.goorm.io'}))
 // app.get('/', (req, res)=>res.send('API Running'));
 
-app.post('/plaidApply', async (req, res) => {
-	console.log("res ", req.body);
-	try {
-		res.send("hello ");
-	} catch(err){
-		console.error(err.message);
-		res.status(500).send("Server Error");
-	}
-})
+// app.post('/plaidApply', async (req, res) => {
+// 	console.log("res ", req.body);
+// 	try {
+// 		res.send("hello ");
+// 	} catch(err){
+// 		console.error(err.message);
+// 		res.status(500).send("Server Error");
+// 	}
+// })
 
 //Serve static assets in production
 if(process.env.NODE_ENV === 'production'){

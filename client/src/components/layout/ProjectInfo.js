@@ -1,4 +1,4 @@
-import React, {Fragment} from 'react';
+import React, {Fragment, useState, useEffect} from 'react';
 import {Link, NavLink} from 'react-router-dom';
 
 const ProjectInfo = ({
@@ -36,7 +36,7 @@ const ProjectInfo = ({
 					<div className="flip-card-inner">
 						<div className="flip-card-front">
 								<img className="Projects-image" 
-									src={require(`../../assets/images/${thumb1}`)} />
+									src={`http://64.227.53.192${thumb1}`} />
 						</div>
 						<div className="d-flex flex-column justify-content-center flip-card-back">
 							<div>
@@ -58,7 +58,7 @@ const ProjectInfo = ({
 					<div className="flip-card-inner">
 						<div className="flip-card-front">
 								<img className="Projects-image" 
-									src={require(`../../assets/images/${thumb2}`)} />
+									src={`http://64.227.53.192${thumb2}`} />
 						</div>
 						<div className="d-flex flex-column justify-content-center flip-card-back">
 							<div>
