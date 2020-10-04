@@ -36,7 +36,7 @@ const ProjectInfo = ({
 					<div className="flip-card-inner">
 						<div className="flip-card-front">
 								<img className="Projects-image" 
-									src={`http://64.227.53.192${thumb1}`} />
+									src={require(`../../assets/images/${thumb1}`)} />
 						</div>
 						<div className="d-flex flex-column justify-content-center flip-card-back">
 							<div>
@@ -58,7 +58,7 @@ const ProjectInfo = ({
 					<div className="flip-card-inner">
 						<div className="flip-card-front">
 								<img className="Projects-image" 
-									src={`http://64.227.53.192${thumb2}`} />
+									src={require(`../../assets/images/${thumb2}`)} />
 						</div>
 						<div className="d-flex flex-column justify-content-center flip-card-back">
 							<div>
