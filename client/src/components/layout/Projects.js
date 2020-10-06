@@ -2,19 +2,26 @@ import React, {Fragment, useState, useEffect} from 'react';
 import {Link, NavLink} from 'react-router-dom';
 import ProjectInfo from './ProjectInfo';
 import '../../assets/css/Projects.scss';
+import axios from 'axios';
 
 const Projects = () =>{
 
 	const [projectInfo, setProjectInfo] = useState([]);
 
+	// useEffect(()=>{
+	// 	fetch('http://64.227.53.192/projects')
+	// 	.then(response => response.json())
+	// 	.then(data => {
+	// 		setProjectInfo(data);
+	// 	})
+	// }, [])
+		
 	useEffect(()=>{
-		fetch('http://64.227.53.192/projects')
-		.then(response => response.json())
+		axios.get('http://64.227.53.192/projects')
 		.then(data => {
-			setProjectInfo(data);
+			console.log("hello", data);
 		})
 	}, [])
-		
 
 	return(
 		<div className="d-flex flex-column">
