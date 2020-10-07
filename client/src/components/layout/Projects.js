@@ -15,16 +15,18 @@ const Projects = () =>{
 	// 		setProjectInfo(data);
 	// 	})
 	// }, [])
-		
+
 	useEffect(()=>{
-		axios.get('http://64.227.53.192/projects')
+		axios.get('https://curlyapi.com/wp-json')
 		.then(data => {
 			console.log("hello", data);
 		})
-	}, [])
+	},[]
+	)
 
 	return(
 		<div className="d-flex flex-column">
+		<span id="delivery_data_url" data-url="{{ route('delivery-data') }}"></span>
 			<div className="Projects-title">
 				<div className="Projects-title-item1">
 					Projects
