@@ -13,7 +13,8 @@ app.use(sslRedirect());
 // added this to package.json in scripts> underneath dev, "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
 
 app.use(express.json({extended: false}));
-app.use(cors({origin: 'https://www.rockycoder.com'}))
+// app.use(cors({origin: 'https://www.rockycoder.com'}))
+app.use(cors({origin: 'http://localhost:3001/'}))
 // app.use(cors({origin: 'https://mernstack-shrnureact.run-us-west2.goorm.io'}))
 // app.get('/', (req, res)=>res.send('API Running'));
 
@@ -35,6 +36,6 @@ if(process.env.NODE_ENV === 'production'){
 		res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'))
 	})
 }
-
-const PORT = process.env.PORT || 5000;
+// process.env.PORT ||
+const PORT = 5000;
 app.listen(PORT, ()=> console.log(`Server started on ${PORT}`));

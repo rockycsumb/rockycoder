@@ -17,10 +17,13 @@ const Projects = () =>{
 	// }, [])
 
 	useEffect(()=>{
-		axios.get('https://curlyapi.com/wp-json')
-		.then(data => {
-			console.log("hello", data);
-		})
+		const res = async () =>{
+			await axios.get('https://curlyapi.com/wp-json/wp/v2/projects')
+			.then(data => {
+				console.log("hello", data);
+			})
+		}
+		res();
 	},[]
 	)
 

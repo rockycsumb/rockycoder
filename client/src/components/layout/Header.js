@@ -11,10 +11,10 @@ const Header = () =>{
 			<div className="Header-title">
 				<div className="Header-title-names">
 					<div className="Header-title-name">
-						Rocky
+						so
 					</div>
 					<div className="Header-title-name">
-						Moreno
+						co
 					</div>
 				</div>
 				
