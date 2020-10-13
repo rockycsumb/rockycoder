@@ -6,7 +6,7 @@ import axios from 'axios';
 
 const Projects = () =>{
 
-	const [projectInfo, setProjectInfo] = useState([]);
+	const [projectInfo, setProjectInfo] = useState({});
 
 	// useEffect(()=>{
 	// 	fetch('http://64.227.53.192/projects')
@@ -18,14 +18,15 @@ const Projects = () =>{
 
 	useEffect(()=>{
 		const res = async () =>{
-			await axios.get('https://curlyapi.com/wp-json/wp/v2/projects')
+			await axios.get('https://curlyapi.com/wp-json/wp/v2/posts?_embed')
 			.then(data => {
-				console.log("hello", data);
+				setProjectInfo(data.data)
 			})
 		}
 		res();
-	},[]
-	)
+	},[])
+	
+	console.log("setProjectInfo data ", projectInfo);
 
 	return(
 		<div className="d-flex flex-column">
