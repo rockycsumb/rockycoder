@@ -44,16 +44,16 @@ const Projects = () =>{
 				<Fragment>
 					{console.log("from map", project)}
 					<ProjectInfo 
-						projectLiveLink={project.projectLiveLink}
-						projectTitle={project.projectTitle}
-						projectDescription={project.projectDescription}
-						thumb1={project.thumb1.url}
-						thumb2={project.thumb2.url}
-						projectBackCardTitle={project.projectBackCardTitle}
-						demoUrl1={project.demoUrl1}
-						demoUrl2={project.demoUrl2}
-						techUsed={project.techUsed}
-						apiUsed={project.apiUsed}
+						projectLiveLink={project.acf.project_livelink}
+						projectTitle={project.acf.project_title}
+						projectDescription={project.acf.project_description}
+						thumb1={project.acf.project_image_1.sizes.medium}
+						thumb2={project.acf.project_image_2.sizes.medium}
+						projectBackCardTitle={project.acf.project_backcardtitle}
+						demoUrl1={project.acf.project_demourl1}
+						demoUrl2={project.acf.project_demourl2}
+						techUsed={project.acf.project_techused}
+						apiUsed={project.acf.project_apiused}
 
 					/>
 					
