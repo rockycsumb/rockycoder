@@ -5,6 +5,7 @@ import { faLeaf, faProjectDiagram } from '@fortawesome/free-solid-svg-icons';
 import { faReact, faNode, faJs, faHtml5, faGitSquare, faCss3Alt } from '@fortawesome/free-brands-svg-icons';
 import myResume from '../../assets/files/RockyMoreno_resume.pdf';
 import '../../assets/css/Resume.scss';
+import ScrollAnimation from 'react-animate-on-scroll';
 
 const Resume = () =>{
 	
@@ -26,7 +27,7 @@ const Resume = () =>{
 					<hr className="Resume-title-hr" />
 				</div>
 			</div>
-			
+			<ScrollAnimation animateIn="fadeInLeft">
 			<div className="Resume-container">
 				<div className="d-flex justify-content-center">
 					<div className="Resume-card text-center shadow-sm">
@@ -96,6 +97,7 @@ const Resume = () =>{
 					</div>
 				</div>
 			</div>
+			</ScrollAnimation>
 			
 			<div className="Resume-title-header">
 				<div className="Resume-title-item">
@@ -107,7 +109,7 @@ const Resume = () =>{
 			</div>
 			
 			
-			
+			<ScrollAnimation animateIn="fadeInRight">
 			<div className="Resume-container">
 				<div className="d-flex justify-content-center">
 					<div className="Resume-card text-center shadow-sm">
@@ -135,6 +137,7 @@ const Resume = () =>{
 					</div>
 				</div>
 			</div>
+			</ScrollAnimation>
 		</div>
 	)
 }

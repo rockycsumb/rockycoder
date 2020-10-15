@@ -3,6 +3,7 @@ import {Link, NavLink} from 'react-router-dom';
 import ProjectInfo from './ProjectInfo';
 import '../../assets/css/Projects.scss';
 import {projectinfo} from '../../assets/projectinfo.js';
+import ScrollAnimation from 'react-animate-on-scroll';
 
 const Projects = () =>{
 	return(
@@ -18,7 +19,7 @@ const Projects = () =>{
 			{/* begin project info */}
 			{projectinfo.map((project, index) =>(
 				<Fragment>
-					
+					<ScrollAnimation animateIn="fadeIn" duration={1.5}>
 					<ProjectInfo 
 						projectLiveLink={project.projectLiveLink}
 						projectTitle={project.projectTitle}
@@ -32,6 +33,7 @@ const Projects = () =>{
 						apiUsed={project.apiUsed}
 
 					/>
+					</ScrollAnimation>
 					
 					{index !== projectinfo.length - 1 ? (
 						<hr className="Projects-divider" />

@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import {Link} from 'react-router-dom';
 import '../../assets/css/Contact.scss';
 import emailjs from 'emailjs-com';
+import ScrollAnimation from 'react-animate-on-scroll';
 
 const Contact = () =>{
 	const [sendingMessage, setSendingMessage] = useState(false);
@@ -87,7 +88,7 @@ const Contact = () =>{
 					</div>
 					
 				) : (
-				
+				<ScrollAnimation animateIn="fadeInUp">
 				<div className="Contact-form">
 				<form onSubmit={e => onSubmit(e)}>
 					<div className="form-group text-center  Contact-form-row">
@@ -147,6 +148,7 @@ const Contact = () =>{
 					</div>
 				</form>
 			</div>
+			</ScrollAnimation>
 			))}
 		</div>
 	)
