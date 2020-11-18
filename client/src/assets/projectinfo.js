@@ -46,5 +46,17 @@ export const projectinfo = [
 		demoUrl2: "https://www.rockycoder.com/",
 		techUsed: "React, Node.js, HTML, CSS, Heroku",
 		apiUsed: "Emailjs"
+	},
+	{
+		projectLiveLink: "https://taqueria-restaurant.herokuapp.com/",
+		projectTitle: "Taqueria Resturant",
+		projectDescription: "A taqueria resturant website",
+		thumb1: "taqueria_thumb1.png",
+		thumb2: "taqueria_thumb2.png",
+		projectBackCardTitle: "Taqueria Los Primos",
+		demoUrl1: "https://taqueria-restaurant.herokuapp.com/",
+		demoUrl2: "https://taqueria-restaurant.herokuapp.com/",
+		techUsed: "React, Node.js, HTML, CSS, Heroku, and Strapi",
+		apiUsed: "Emailjs, Strapi"
 	}
 ]
