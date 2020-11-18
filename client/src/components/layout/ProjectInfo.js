@@ -36,11 +36,8 @@ const ProjectInfo = ({
 					<div className="flip-card-inner">
 						<div className="flip-card-front">
 								<img className="Projects-image" 
-<<<<<<< HEAD
 									src={thumb1} />
-=======
-									src={require(`../../assets/images/${thumb1}`)} />
->>>>>>> a75f4862983e3ae70dd45081e05e432a3b205461
+			
 						</div>
 						<div className="d-flex flex-column justify-content-center flip-card-back">
 							<div>
@@ -62,11 +59,9 @@ const ProjectInfo = ({
 					<div className="flip-card-inner">
 						<div className="flip-card-front">
 								<img className="Projects-image" 
-<<<<<<< HEAD
+
 									src={thumb2} />
-=======
-									src={require(`../../assets/images/${thumb2}`)} />
->>>>>>> a75f4862983e3ae70dd45081e05e432a3b205461
+
 						</div>
 						<div className="d-flex flex-column justify-content-center flip-card-back">
 							<div>

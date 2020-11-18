@@ -11,12 +11,7 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
-    "animate.css": "^3.7.2",
-<<<<<<< HEAD
-    "animejs": "^3.2.0",
-    "axios": "^0.20.0",
-=======
->>>>>>> a75f4862983e3ae70dd45081e05e432a3b205461
+    "animate.css": "^4.1.1",
     "bootstrap": "^4.5.0",
     "emailjs-com": "^2.6.3",
     "headroom.js": "^0.11.0",
