@@ -71,10 +71,10 @@ const NavBar = () =>{
 					</div>
 					<div className="Navbar-logo  d-flex align-items-center">
 						<div className="Navbar-logo-some" >
-							R
+							Rocky
 						</div>
 						<div className="Navbar-logo-coder">
-							C
+							Coder
 						</div>
 					</div>
 					<div className="Navbar-buttons">
