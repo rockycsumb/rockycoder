@@ -40,9 +40,9 @@ const Projects = () =>{
 				</div>
 			</div>
 			{/* begin project info */}
-			{projectInfo.length > 0 && projectInfo.map((project, index) =>(
+			{projectinfo.map((project, index) =>(
 				<Fragment>
-					{console.log("from map", project)}
+					<ScrollAnimation animateIn="fadeIn" duration={1.5}>
 					<ProjectInfo 
 						projectLiveLink={project.acf.project_livelink}
 						projectTitle={project.acf.project_title}
@@ -54,10 +54,10 @@ const Projects = () =>{
 						demoUrl2={project.acf.project_demourl2}
 						techUsed={project.acf.project_techused}
 						apiUsed={project.acf.project_apiused}
-
 					/>
+					</ScrollAnimation>
 					
-					{index !== projectInfo.length - 1 ? (
+					{index !== projectinfo.length - 1 ? (
 						<hr className="Projects-divider" />
 					): (
 					 ""

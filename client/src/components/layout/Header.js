@@ -3,12 +3,15 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLeaf, faProjectDiagram } from '@fortawesome/free-solid-svg-icons';
 import { faReact, faNode } from '@fortawesome/free-brands-svg-icons';
 import '../../assets/css/Header.scss';
+import ScrollAnimation from 'react-animate-on-scroll';
+
 
 const Header = () =>{
 	
 	return(
 		<div className="Header-main">
 			<div className="Header-title">
+				<ScrollAnimation animateIn="fadeIn">
 				<div className="Header-title-names">
 					<div className="Header-title-name">
 						Rocky
@@ -17,11 +20,14 @@ const Header = () =>{
 						Coder
 					</div>
 				</div>
-				
+				</ScrollAnimation>
+				<ScrollAnimation animateIn="fadeIn">
 				<div className="Header-title-description">
 					FRONTEND ENGINEER
 				</div>
+				</ScrollAnimation>
 			</div>
+			<ScrollAnimation animateIn="flipInY">
 			<div className="Header-badges">
 				<div className="d-flex justify-content-center badge-row">
 					<div className="Header-badges-items 
@@ -69,6 +75,7 @@ const Header = () =>{
 					</div>
 				</div>
 			</div>
+			</ScrollAnimation>
 		</div>
 	)
 }

@@ -4,6 +4,7 @@ import { Link } from 'react-scroll';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars , faTimes, faPlus} from '@fortawesome/free-solid-svg-icons'
 
+
 const NavBar = () =>{
 	const [toggle, setToggle] = useState(false);
 	
@@ -69,6 +70,7 @@ const NavBar = () =>{
 					<div className="Navbar-menu-space">
 						{" "}
 					</div>
+					
 					<div className="Navbar-logo  d-flex align-items-center">
 						<div className="Navbar-logo-some" >
 							Rocky

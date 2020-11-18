@@ -5,11 +5,13 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faGithubAlt } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import '../../assets/css/Footer.scss';
+import ScrollAnimation from 'react-animate-on-scroll';
 
 const Footer = () =>{
 		
 	return(
 		<div className="FooterPA">
+			<ScrollAnimation animateIn="fadeIn">
 			<div className="Footer-container">
 				<div className="Footer-logo-rockycoder  d-flex align-items-center mt-5">
 					<div className="Footer-logo-some" >
@@ -77,7 +79,7 @@ const Footer = () =>{
 						</Link>
 				</p>
 			</div>
-			
+			</ScrollAnimation>
 		</div>
 	)
 }
