@@ -20,7 +20,7 @@ const Projects = () =>{
 		const res = async () =>{
 			await axios.get('https://curlyapi.com/wp-json/wp/v2/posts?_embed')
 			.then(data => {
-				setProjectInfo(data.data)
+				setProjectInfo(data.data) 
 			})
 		}
 		res();
