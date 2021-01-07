@@ -49,8 +49,8 @@ export const projectinfo = [
 	},
 	{
 		projectLiveLink: "https://taqueria-restaurant.herokuapp.com/",
-		projectTitle: "Taqueria Resturant",
-		projectDescription: "A taqueria resturant website",
+		projectTitle: "Taqueria Restaurant",
+		projectDescription: "A taqueria restaurant website",
 		thumb1: "taqueria_thumb1.png",
 		thumb2: "taqueria_thumb2.png",
 		projectBackCardTitle: "Taqueria Los Primos",
