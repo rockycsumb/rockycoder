@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLeaf, faProjectDiagram } from '@fortawesome/free-solid-svg-icons';
 import { faReact, faNode, faJs, faHtml5, faGitSquare, faCss3Alt } from '@fortawesome/free-brands-svg-icons';
-import myResume from '../../assets/files/RockyMoreno_resume.pdf';
+import myResume from '../../assets/files/RockyMoreno_resume_temp.pdf';
 import '../../assets/css/Resume.scss';
 import ScrollAnimation from 'react-animate-on-scroll';
 
@@ -121,7 +121,7 @@ const Resume = () =>{
 				</div>
 				<div className="d-flex justify-content-center">
 					<div className="Resume-card text-center shadow-sm">
-						Location: San Jose, California
+						Location: Somewhere, California
 					</div>
 					<div className="Resume-card text-center shadow-sm">
 						Resume

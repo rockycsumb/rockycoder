@@ -14,7 +14,6 @@ const Header = () =>{
 				<ScrollAnimation animateIn="fadeIn">
 				<div className="Header-title-names">
 					<div className="Header-title-name">
-						hello
 						Rocky
 					</div>
 					<div className="Header-title-name">

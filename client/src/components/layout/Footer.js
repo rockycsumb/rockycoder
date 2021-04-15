@@ -32,7 +32,7 @@ const Footer = () =>{
 					<NavLink
 						className="Footer-logo-buttons"
 						to={{ pathname: 
-							 "https://www.linkedin.com/in/rocky-moreno-23a57a155/" 
+							 "https://www.rockycoder.com" 
 						}}  
 						target="_blank"
 					>
@@ -43,7 +43,7 @@ const Footer = () =>{
 					<NavLink
 						className="Footer-logo-buttons"
 						to={{ pathname: 
-							 "https://github.com/rockycsumb" 
+							 "https://www.rockycoder.com" 
 						}}  
 						target="_blank"
 					>

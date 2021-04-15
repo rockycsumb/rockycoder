@@ -53,6 +53,7 @@ const Contact = () =>{
 			}, 2000);
 			setMessageSent(true);
 			// console.log("message sent*****")
+			//console.log
 		}, 2000);
 	}
 	
