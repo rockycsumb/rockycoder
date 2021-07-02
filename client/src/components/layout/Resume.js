@@ -8,7 +8,6 @@ import '../../assets/css/Resume.scss';
 import ScrollAnimation from 'react-animate-on-scroll';
 
 const Resume = () =>{
-	
 	return(
 		<div className="Resume">
 			<div className="Resume-title-header">
