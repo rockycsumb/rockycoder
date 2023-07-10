@@ -21,15 +21,16 @@
   },
   "homepage": "https://github.com/rockycsumb/rockycoder#readme",
   "dependencies": {
-    "axios": "^0.20.0",
+    "axios": "^1.4.0",
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "heroku-ssl-redirect": "0.0.4",
+    "node-sass": "^4.14.1",
     "request": "^2.88.2",
     "save": "^2.4.0"
   },
   "devDependencies": {
-    "concurrently": "^5.2.0",
-    "nodemon": "^2.0.4"
+    "concurrently": "^8.2.0",
+    "nodemon": "^3.0.1"
   }
 }
